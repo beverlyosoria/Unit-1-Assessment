@@ -23,12 +23,14 @@ function init() {
 
     sum = 0;
 
+
     render();
 }
 
 function render() {
     sumEl.textContent = sum;
     console.log(Math.sign(sum));
+    if (sum < 0) sum.style.color = "red";
 
 }
 
@@ -42,8 +44,8 @@ function handleAdd(event) {
 }
 
 function handleSubtract(event) {
-    var inputValue = document.getElementById('input'.value);
+    var inputValue = document.getElementById('input').value;
     valueNum = parseInt(inputValue, 10);
-    sum = valueNum - sum;
+    sum = sum - valueNum;
     render();
 }
