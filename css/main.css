@@ -1,0 +1,54 @@
+html,
+body {
+    height: 100%;
+
+}
+
+html,
+* {
+    box-sizing: border-box;
+}
+
+section {
+
+    font-size: 100px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+}
+
+button {
+    width: 60px;
+    height: 70px;
+    padding: 10px 10px;
+    font-size: 30px;
+    text-align: center;
+    border: 2px solid grey;
+    border-radius: 5px;
+
+}
+
+input {
+    width: 160px;
+    height: 100px;
+    margin-top: 9px;
+    font-size: 80px;
+    text-align: center;
+    border: 5px solid grey;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: darkgrey;
+    color: white;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 0;
+}
