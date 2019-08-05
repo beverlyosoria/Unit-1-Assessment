@@ -30,7 +30,7 @@ function init() {
 function render() {
     sumEl.textContent = sum;
     console.log(Math.sign(sum));
-    if (sum < 0) sum.style.color = "red";
+
 
 }
 
