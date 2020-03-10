@@ -1,51 +1,42 @@
-// state 
+// state
 var sum;
 
-// cached elements 
+// cached elements
 var sumEl = document.getElementById('sum');
 var inputEl = document.getElementById('input');
 var addEl = document.getElementById('add');
 var subtractEl = document.getElementById('subtract');
 
 // event listeners
-document
-    .getElementById("add")
-    .addEventListener("click", handleAdd);
+document.getElementById('add').addEventListener('click', handleAdd);
 
-document
-    .getElementById("subtract")
-    .addEventListener("click", handleSubtract);
+document.getElementById('subtract').addEventListener('click', handleSubtract);
 
 //functions
 init();
 
 function init() {
+	sum = 0;
 
-    sum = 0;
-
-
-    render();
+	render();
 }
 
 function render() {
-    sumEl.textContent = sum;
-    console.log(Math.sign(sum));
-
-
+	sumEl.textContent = sum;
+	console.log(Math.sign(sum));
 }
 
-
 function handleAdd(event) {
-    var inputValue = document.getElementById('input').value;
-    valueNum = parseInt(inputValue, 10);
-    sum = valueNum + sum;
+	var inputValue = document.getElementById('input').value;
+	valueNum = parseInt(inputValue, 10);
+	sum = valueNum + sum;
 
-    render();
+	render();
 }
 
 function handleSubtract(event) {
-    var inputValue = document.getElementById('input').value;
-    valueNum = parseInt(inputValue, 10);
-    sum = sum - valueNum;
-    render();
+	var inputValue = document.getElementById('input').value;
+	valueNum = parseInt(inputValue, 10);
+	sum = sum - valueNum;
+	render();
 }
